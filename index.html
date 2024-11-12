@@ -5,33 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction à l'anatomie</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #0056b3;
-        }
-        h1 {
-            text-align: center;
-        }
-        p, ul {
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #ccc;
-            margin: 20px 0;
-            padding-left: 15px;
-        }
+        /* التصميم الأساسي */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #e6f2ff; /* خلفية زرقاء فاتحة لجو هادئ */
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* العناوين */
+h1, h2, h3 {
+    color: #1a73e8; /* لون أزرق رئيسي للعناوين */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* تنسيق محدد لكل عنوان */
+h1 {
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #0d47a1; /* أزرق داكن لـ h1 */
+    border-bottom: 3px solid #1a73e8; /* خط سفلي يبرز العنوان */
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #1565c0; /* لون أزرق أفتح للعناوين الثانوية */
+    font-size: 2em;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #1976d2; /* لون أزرق آخر للعناوين الفرعية */
+    font-size: 1.5em;
+    padding-bottom: 3px;
+}
+
+/* تأثيرات التحويم للعناوين */
+h1:hover, h2:hover, h3:hover {
+    color: #0d47a1; /* أزرق داكن عند التحويم */
+    transform: scale(1.05); /* تكبير بسيط عند التحويم */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* ظل أكبر عند التحويم */
+}
+
+/* الفقرات والقوائم */
+p, ul {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #555;
+}
+
+ul li:hover {
+    color: #0d47a1; /* تغيير لون النقاط عند التحويم */
+}
+
+/* تحسين الكتل النصية */
+blockquote {
+    font-style: italic;
+    color: #4a6fa5;
+    border-left: 5px solid #1976d2; /* لون أزرق للخط الجانبي */
+    background-color: #e3f2fd; /* خلفية زرقاء فاتحة للكتل */
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+blockquote:hover {
+    transform: scale(1.02); /* تكبير بسيط عند التحويم */
+    background-color: #bbdefb; /* لون أفتح عند التحويم */
+}
     </style>
 </head>
 <body>
